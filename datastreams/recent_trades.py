@@ -53,7 +53,7 @@ async def binance_trade_stream(uri, symbol, filename):
                         repeat_count = 1
                     output = f"{stars}{trade_type} {display_symbol} {readable_trade_time} ${usd_size:,.0f}"
                     for _ in range(repeat_count):
-                        cprint(output, 'white', f'on_{color}', attrs=attrs)
+                        cprint(output, 'black', f'on_{color}', attrs=attrs)
 
                     # log to csv
                     with open(filename, 'a') as f:

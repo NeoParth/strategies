@@ -36,10 +36,10 @@ class TradeAggregator:
                 trade_type = "BUY" if not is_buyer_maker else "SELL"
                 if usd_size > 3000000:
                     usd_size = usd_size / 1000000
-                    cprint(f"\033[5m{trade_type} {symbol} {second} ${usd_size:.2f}m\033[0m", 'white', back_color, attrs=attrs)
+                    cprint(f"\033[5m{trade_type} {symbol} {second} ${usd_size:.2f}m\033[0m", 'black', back_color, attrs=attrs)
                 else:
                     usd_size = usd_size / 1000000
-                    cprint(f"{trade_type} {symbol} {second} ${usd_size:.2f}m", 'white', back_color, attrs=attrs)
+                    cprint(f"{trade_type} {symbol} {second} ${usd_size:.2f}m", 'black', back_color, attrs=attrs)
                 deletions.append(trade_key)
         
         for key in deletions:

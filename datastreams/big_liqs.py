@@ -39,7 +39,7 @@ async def binance_liquidation(uri, filename):
                     attrs = ['bold'] if usd_size > 10000 else []
                     usd_size = usd_size / 1000000
                     
-                    cprint(output, 'white', f'on_{color}', attrs=attrs)
+                    cprint(output, 'black', f'on_{color}', attrs=attrs)
 
                     print('')
 

@@ -1,6 +1,8 @@
 {
-    "ricing part 1 - ssh connection": 90,
-    "maia": 90,
-    "kalliwoda": 90
+    "Get connected to exchanges with cctx": 90,
+    "Get the data from the exchanges into a csv": 90,
+    "Check how much delay there is": 5,
+    "Setup Redis Database": 100,
+    "Setup TTL that deletes data after every 20 minutes": 20
 }
 
